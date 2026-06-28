@@ -106,7 +106,7 @@ export const steps: Step[] = [
   {
     number: "02",
     title: "Realiza tu pago",
-    description: "Aceptamos tarjeta, transferencia, OXXO y PayPal.",
+    description: "Aceptamos efectivo o transferencia bancaria.",
     delay: 150,
   },
   {
@@ -121,18 +121,18 @@ export const testimonials: Testimonial[] = [
   {
     quote:
       "Llevo 6 meses y nunca un solo problema. Netflix en 4K por mucho menos que la suscripción normal.",
-    author: "María G.",
+    author: "Manuel M.",
     delay: 0,
   },
   {
     quote:
-      "Renté Crunchyroll para ver One Piece y la verdad me sorprendió lo rápido del soporte.",
-    author: "Carlos R.",
+      "Rento Crunchyroll y tengo todo el acceso a todas las series y animes que me encantan, super recomendado.",
+    author: "Brayan M.",
     delay: 120,
   },
   {
-    quote: "Tengo el plan Total y veo de todo con mi familia. Ahorramos muchísimo cada mes.",
-    author: "Ana P.",
+    quote: "Tengo Prime Video y Disney y todo me funciona excelente, me ahorro más con ustedes.",
+    author: "Nohemi H.",
     delay: 240,
   },
 ]
@@ -167,6 +167,18 @@ export const faqItems: FaqItem[] = [
     answer:
       "Te damos 5 días para que pagues. Al 6.º día, si aún no has pagado, se cobra una mora de $1 extra.",
     delay: 320,
+  },
+  {
+    question: "¿En cuántos dispositivos puedo utilizar mi perfil?",
+    answer:
+      "Puedes iniciar sesión en todos los dispositivos que quieras. Sin embargo, solo un dispositivo puede reproducir contenido al mismo tiempo.",
+    delay: 400,
+  },
+  {
+    question: "¿Por qué se desconfigura a cada rato Netflix?",
+    answer:
+      "Netflix revisa y actualiza la ubicación del hogar de forma periódica; es una política de la plataforma, no un fallo de tu perfil. Cuando aparezca el aviso, sigue estos pasos:\n\n1. Pulsa «Actualizar hogar» en Netflix (repítelo las veces que te lo pida)\n2. Reenvíanos el correo de confirmación que recibas\n3. Espera a que validemos el cambio\n4. ¡Listo! Vuelves a disfrutar tu contenido con normalidad",
+    delay: 480,
   },
 ]
 

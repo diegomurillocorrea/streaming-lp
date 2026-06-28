@@ -22,7 +22,7 @@ export function FaqSection() {
                   +
                 </span>
               </summary>
-              <p className="mt-4 animate-[fade-in_0.3s_ease-out] leading-relaxed text-muted-foreground">
+              <p className="mt-4 animate-[fade-in_0.3s_ease-out] whitespace-pre-line leading-relaxed text-muted-foreground">
                 {item.answer}
               </p>
             </details>
