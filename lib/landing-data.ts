@@ -32,11 +32,16 @@ export interface FaqItem {
   delay: number
 }
 
-export const navLinks = [
-  { href: "#plataformas", label: "Plataformas" },
-  { href: "#como-funciona", label: "Cómo funciona" },
-  { href: "#faq", label: "FAQ" },
-] as const
+export interface NavLink {
+  sectionId: string
+  label: string
+}
+
+export const navLinks: NavLink[] = [
+  { sectionId: "plataformas", label: "Plataformas" },
+  { sectionId: "como-funciona", label: "Cómo funciona" },
+  { sectionId: "faq", label: "FAQ" },
+]
 
 export const platforms: Platform[] = [
   {
@@ -70,6 +75,14 @@ export const platforms: Platform[] = [
     description: "Estrenos y deportes en vivo",
     price: 3,
     badge: "Calidad 4K HDR",
+  },
+  {
+    name: "YouTube Premium",
+    letter: "Y",
+    color: "#FF0000",
+    description: "Incluye YouTube Music y YouTube Premium sin anuncios",
+    price: 6.5,
+    badge: "Sin anuncios",
   },
 ]
 
@@ -183,9 +196,9 @@ export const faqItems: FaqItem[] = [
 ]
 
 export const footerLinks = [
-  { href: "#", label: "Términos" },
-  { href: "#", label: "Privacidad" },
-  { href: "#", label: "Contacto" },
+  { label: "Términos" },
+  { label: "Privacidad" },
+  { label: "Contacto" },
 ] as const
 
 export const heroTrustItems = [

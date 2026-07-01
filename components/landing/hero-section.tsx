@@ -1,7 +1,7 @@
-import Link from "next/link"
 import { ArrowRight, Check, Play } from "lucide-react"
 
 import { DaiegoLogo } from "@/components/daiego-logo"
+import { ScrollToSectionLink } from "@/components/scroll-to-section-link"
 import { heroTrustItems } from "@/lib/landing-data"
 import { buildWhatsAppInterestUrl } from "@/lib/whatsapp-checkout"
 
@@ -39,13 +39,13 @@ export function HeroSection() {
             Elegir perfiles
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
-          <Link
-            href="#como-funciona"
+          <ScrollToSectionLink
+            sectionId="como-funciona"
             className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-7 py-3.5 text-sm font-semibold transition hover:bg-accent"
           >
             <Play className="h-4 w-4 text-brand" aria-hidden="true" />
             Cómo funciona
-          </Link>
+          </ScrollToSectionLink>
         </div>
 
         <div className="mt-12 flex animate-[fade-in_1s_ease-out_0.5s_both] flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-muted-foreground">

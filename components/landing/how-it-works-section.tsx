@@ -3,7 +3,7 @@ import { steps } from "@/lib/landing-data"
 
 export function HowItWorksSection() {
   return (
-    <section id="como-funciona" className="border-y border-border/60 bg-card/40">
+    <section id="como-funciona" className="scroll-mt-[4.25rem] border-y border-border/60 bg-card/40">
       <div className="mx-auto max-w-7xl px-6 py-24">
         <Reveal>
           <div className="mx-auto mb-14 max-w-2xl text-center">

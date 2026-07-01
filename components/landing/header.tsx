@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react"
 
 import { CartButton } from "@/components/cart/cart-button"
 import { DaiegoLogo } from "@/components/daiego-logo"
+import { ScrollToSectionLink } from "@/components/scroll-to-section-link"
 import { navLinks } from "@/lib/landing-data"
 import { buildWhatsAppInterestUrl } from "@/lib/whatsapp-checkout"
 
@@ -26,13 +27,13 @@ export function LandingHeader() {
 
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
+            <ScrollToSectionLink
+              key={link.sectionId}
+              sectionId={link.sectionId}
               className="transition hover:text-foreground"
             >
               {link.label}
-            </Link>
+            </ScrollToSectionLink>
           ))}
         </nav>
 

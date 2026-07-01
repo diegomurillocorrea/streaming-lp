@@ -1,7 +1,7 @@
-import Link from "next/link"
 import { ArrowRight, Clock } from "lucide-react"
 
 import { Reveal } from "@/components/reveal"
+import { ScrollToSectionLink } from "@/components/scroll-to-section-link"
 
 export function CtaSection() {
   return (
@@ -22,13 +22,13 @@ export function CtaSection() {
               Más de 100 personas ya disfrutan DAIEGO Streaming. Únete sin permanencia y
               sin sorpresas.
             </p>
-            <Link
-              href="#plataformas"
+            <ScrollToSectionLink
+              sectionId="plataformas"
               className="glow-brand mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-base font-bold text-brand-foreground transition-transform hover:scale-[1.04]"
             >
               Ver planes
               <ArrowRight className="h-5 w-5" aria-hidden="true" />
-            </Link>
+            </ScrollToSectionLink>
           </div>
         </div>
       </Reveal>

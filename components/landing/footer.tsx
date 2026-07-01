@@ -20,13 +20,9 @@ export function LandingFooter() {
 
         <div className="flex gap-5">
           {footerLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="transition hover:text-foreground"
-            >
+            <span key={link.label} className="cursor-default">
               {link.label}
-            </Link>
+            </span>
           ))}
         </div>
       </div>

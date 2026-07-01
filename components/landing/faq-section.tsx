@@ -3,7 +3,7 @@ import { faqItems } from "@/lib/landing-data"
 
 export function FaqSection() {
   return (
-    <section id="faq" className="mx-auto max-w-3xl px-6 py-24">
+    <section id="faq" className="mx-auto max-w-3xl scroll-mt-[4.25rem] px-6 py-24">
       <Reveal>
         <div className="mb-14 text-center">
           <h2 className="text-4xl font-black tracking-tight md:text-5xl">
